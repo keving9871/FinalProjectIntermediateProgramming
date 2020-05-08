@@ -6311,6 +6311,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1979848078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2115646953758167568, guid: 3d73b18034d58e246b47c7d0434d26b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8224952635950082432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1983207981
 GameObject:
   m_ObjectHideFlags: 0
@@ -7088,6 +7100,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2.0010827
       objectReference: {fileID: 0}
+    - target: {fileID: 1578863878562633316, guid: fea10db0f7a79dc47a2fa99e963c907c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4085032346484299771, guid: fea10db0f7a79dc47a2fa99e963c907c,
         type: 3}
       propertyPath: m_IsActive
@@ -7187,6 +7204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 2.3829017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782191295048531206, guid: fea10db0f7a79dc47a2fa99e963c907c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4782191295835360794, guid: fea10db0f7a79dc47a2fa99e963c907c,
         type: 3}
@@ -7297,6 +7319,11 @@ PrefabInstance:
       propertyPath: gunText
       value: 
       objectReference: {fileID: 1601013408}
+    - target: {fileID: 4782191295835360794, guid: fea10db0f7a79dc47a2fa99e963c907c,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1979848078}
     - target: {fileID: 5402465109324007088, guid: fea10db0f7a79dc47a2fa99e963c907c,
         type: 3}
       propertyPath: m_Enabled
@@ -7611,6 +7638,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1630125472096713231, guid: 3d73b18034d58e246b47c7d0434d26b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1795078082560377698, guid: 3d73b18034d58e246b47c7d0434d26b7,
         type: 3}
       propertyPath: m_IsActive

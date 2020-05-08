@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public GameObject meleeArea, leftMeleeArea, apple, canvas, audioController, hair, leftBullet, rightBullet;
     public int coins;
     private Scene scene;
-    public TextMeshProUGUI interactText, healthText, coinText, storeText, getKeyText, gunText, swordText;
+    public TextMeshProUGUI interactText, healthText, coinText, storeText, getKeyText, gunText, swordText, dialogueText;
     private bool meleeIsRunning, leftMeleeisRunning, isFlipped, hasKey;
     public AudioSource audioSource;
     public AudioClip swoosh, ouch, eat, bang;
@@ -348,6 +348,12 @@ public class PlayerController : MonoBehaviour
             hasKey = true;
             keyImage.enabled = true;
         }
+
+        //Trigger NPC Dialogue
+        if (collision.CompareTag("NPC"))
+        {
+            dialogueText.gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -390,10 +396,7 @@ public class PlayerController : MonoBehaviour
         //Let player open the door to progress:
         if (collision.CompareTag("Door") && Input.GetKey(KeyCode.E) && swordPowers == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            spawnPoint = GameObject.FindGameObjectWithTag("Spawn");
-            transform.position = spawnPoint.transform.position;
-            chest = null;
+            LoadLevel();
         }
 
         if (collision.CompareTag("Store") && coins >= 1)
@@ -428,5 +431,18 @@ public class PlayerController : MonoBehaviour
         {
             nearStore = false;
         }
+
+        if (collision.CompareTag("NPC"))
+        {
+            dialogueText.gameObject.SetActive(false);
+        }
+    }
+
+    private void LoadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        spawnPoint = GameObject.FindGameObjectWithTag("Spawn");
+        transform.position = spawnPoint.transform.position;
+        chest = null;
     }
 }

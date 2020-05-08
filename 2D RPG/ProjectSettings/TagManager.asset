@@ -19,6 +19,7 @@ TagManager:
   - Gun
   - Coin
   - Key
+  - NPC
   layers:
   - Default
   - TransparentFX
