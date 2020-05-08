@@ -5,3 +5,5 @@ https://assetstore.unity.com/packages/vfx/particles/epic-toon-fx-57772
 
 Thanks to Pixel-Poem Dungeon Pack for the 2D assets used on the project
 https://pixel-poem.itch.io/dungeon-assetpuck
+
+Thanks to FreeSounds.org for all audio assets including music
